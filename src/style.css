@@ -1,26 +1,33 @@
 body{
     margin:0;
   padding-top:100px;
-  font-family:sans-serif;
+  font-family: "Karla", sans-serif;
 }
 .header{
+    position: absolute;
+    top: 0;
+    width: 100%;
     display:flex;
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
     color:white;
     background-color: rgb(120, 4, 230);
-    top:0;
-    position:fixed;
-    width:100%;
+
+   
 }
 main{
     padding:44px;
+}
+.my-name{
+    font-size:20px;
+    padding-right:10px;
 }
 .form{
   display:grid;
   grid-template: 40px 40px / 1fr 1fr;  
   gap:15px;
+  margin-bottom: 17px;
 }
 .form--submit{
     grid-column: 1 / -1;
@@ -37,17 +44,20 @@ main{
     border: 1px solid #D5D4D8;
     text-indent: 5px;
 }
+.meme{
+    position:relative;
+}
+
 .image{
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width:100%;
-  
+    overflow: hidden;
+    position: sticky;
 }
 
-.meme{
-    position:relative;
-}
+
 
 .meme--text {
     position: absolute;
